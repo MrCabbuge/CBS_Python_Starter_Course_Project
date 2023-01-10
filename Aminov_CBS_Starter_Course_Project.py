@@ -31,7 +31,6 @@ def number_guesser():
             case 'y':
                 number_guesser()
             case 'n':
-
                 break
 
 
@@ -188,8 +187,8 @@ def main_menu():
         print('Select one of available options: '.center(50, ' '))
         print('\n1. Recommend a movie\n2. Recommend some music\n3. '
               'Recommend PC game\n4. Play a game\n5. Extra')
-        userchoice = input('Your choice: ')
-        match userchoice:
+        user_choice = input('Your choice: ')
+        match user_choice:
             case "1":
                 movie_choice()
             case "2":

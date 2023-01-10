@@ -8,7 +8,7 @@ import string
 # Function for a number guessing game
 def number_guesser():
     print('Welcome to the "number guesser!"'.center(50, ' '))
-    print("Think of a number between 1 and 10!".center(50, ' '))
+    print('Think of a number between 1 and 10!'.center(50, ' '))
     print('The bot will try to guess the number in the range!'.center(50, ' '))
     low = 1
     high = 10
@@ -25,7 +25,7 @@ def number_guesser():
             low = computer_guess + 1
     print(f'Yay! The computer guessed your number, {computer_guess}, correctly!')
     while True:
-        print("Would you like another round?")
+        print('Would you like another round?')
         user_input = input('Input (y/n): ')
         match user_input:
             case 'y':
@@ -40,7 +40,7 @@ def random_facts():
     x = randfacts.get_fact()
     print(x)
     while True:
-        print("Would you like another interesting fact?")
+        print('Would you like another interesting fact?')
         user_input = input('Input (y/n): ')
         match user_input:
             case 'y':
@@ -90,7 +90,7 @@ def hangman():
     else:
         print('YAY! You guessed the word', word, '!!')
     while True:
-        print("Would you like another round?")
+        print('Would you like another round?')
         user_input = input('Input (y/n): ')
         match user_input:
             case 'y':
@@ -104,7 +104,7 @@ def music_choice():
     heavy_metal = ['Metallica - Enter Sandman', 'Asking Alexandria - Inside the fire', 'Slipknot - Duality']
     hip_hop = ['Lady Gaga - Poker Face', 'Nicki Minaj - Anaconda', 'Dax - JOKER']
     rock = ['Rise Against - Make it stop', 'Hot Water Music - Drag my body', 'Godsmack - Good day to die']
-    print("Recommending some music. Pick a genre:")
+    print('Recommending some music. Pick a genre:')
     print('\n\t1. Heavy Metal\n\t2. Hip-Hop\n\t3. Rock')
     movie_rec = input('Your choice: ')
     match movie_rec:
@@ -121,7 +121,7 @@ def movie_choice():
     comedy = ['The Big Lebowski', 'Superbad', 'Zoolander']
     horror = ['The conjuring', 'Paranormal Activity', 'Hellraiser']
     adventures = ['The Lord of the Rings', 'Matrix', 'Avatar']
-    print("Recommending a movie. Pick a genre:")
+    print('Recommending a movie. Pick a genre:')
     print('\n\t1. Comedy\n\t2. Horror\n\t3. Adventures')
     movie_rec = input('Your choice: ')
     match movie_rec:
@@ -138,7 +138,7 @@ def game_choice():
     shooters = ['Halo', 'Battlefield 1', 'DOOM']
     sandbox = ['Minecraft', 'Project Zomboid', 'Rimworld']
     strategy = ['Stellaris', 'Age of Empires', 'Civilization VI']
-    print("Recommending some PC games. Pick a genre:")
+    print('Recommending some PC games. Pick a genre:')
     print('\n\t1. Shooters\n\t2. Sandbox\n\t3. Strategy')
     game_rec = input('Your choice: ')
     match game_rec:
@@ -152,8 +152,8 @@ def game_choice():
 
 # Function for palying games
 def user_games():
-    print("Pick a game of your liking:")
-    print("\n\t1. Computer's guessing numbers\n\t2. Hangman")
+    print('Pick a game of your liking:')
+    print('\n\t1. Computer\'s guessing numbers\n\t2. Hangman')
     user_game_rec = input('Your choice: ')
     match user_game_rec:
         case '1':
@@ -164,14 +164,14 @@ def user_games():
 
 # Function for jokes and facts sharing
 def extra():
-    print("Pick a game of your liking:")
-    print("\n\t1. Get a joke\n\t2. Get a random fact")
+    print('Pick a game of your liking:')
+    print('\n\t1. Get a joke\n\t2. Get a random fact')
     extra_rec = input('Your choice: ')
     match extra_rec:
         case '1':
             print(pyjokes.get_joke())
             while True:
-                print("Would you like another joke?")
+                print('Would you like another joke?')
                 user_input = input('Input (y/n): ')
                 match user_input:
                     case 'y':
@@ -202,9 +202,9 @@ def main_menu():
             case "5":
                 extra()
             case _:
-                print("Invalid choice, try again")
-        new_calc = input("Type Enter to continue. Type Off to exit ")
-        if new_calc == "Off":
+                print('Invalid choice, try again')
+        new_calc = input('Type Enter to continue. Type Off to exit ')
+        if new_calc == 'Off':
             break
 
 
